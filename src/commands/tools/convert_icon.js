@@ -3,7 +3,6 @@ const { ApplicationCommandType, ApplicationCommandOptionType } = require('discor
 const { EmbedBuilder, PermissionFlagsBits, AttachmentBuilder } = require('discord.js');
 
 const { SlashCommandBuilder } = require("discord.js");
-var ColorThief = require('color-thief-jimp');
 var Jimp = require('jimp');
 const fs = require("fs");
 
