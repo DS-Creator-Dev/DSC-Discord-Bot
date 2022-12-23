@@ -4,6 +4,7 @@ const fs = require("fs");
 require('dotenv').config();
 
 const token = process.env.Bot_Token;
+const id = process.env.Bot_ID;
 
 module.exports = (client) => {
   client.handleCommands = async () => {
@@ -23,13 +24,12 @@ module.exports = (client) => {
 
     const commandsLoading = client.commandArray.map(command => command.toJSON());
 
-    const clientId = "ID";
     const rest = new REST({ version: 10 }).setToken(token);
     try {
       console.log('Started refreshing application {/} commands.');
 
       await rest.put(
-        Routes.applicationCommands(clientId), {
+        Routes.applicationCommands(id), {
         body: commandsLoading,
       })
     } catch (err) {
