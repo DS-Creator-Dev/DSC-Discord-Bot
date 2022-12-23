@@ -1,4 +1,4 @@
-var msg = "DS Creator (DSC) is a game engine created by Kenyon Bowers (BowersIndustry), tt9, MakeYourDSGame, and NotImplementedLife. It gives ANYONE the ability to create video games for the Nintendo DS! Currently it is not available to the public due to the fact that it is still in development.\nMore info about DS Creator can be found here: https://bowersindustry.github.io/ds-creator-docs/";
+var msg = "DS Creator (DSC) is a game engine created by Kenyon Bowers and NotImplementedLife. It gives **ANYONE** the ability to create video games for the Nintendo DS! Currently it is not available to the public due to the fact that it is still in development.\nMore info about DS Creator can be found here: https://ds-creator-dev.github.io/ds-creator-docs/";
 
 const Discord = require("discord.js");
 const { ApplicationCommandType, ApplicationCommandOptionType } = require('discord.js');
